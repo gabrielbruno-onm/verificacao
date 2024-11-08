@@ -310,8 +310,7 @@
         //Função para avançar no caminho "Não sou Aluno", redirecionando para o checkout Hotmart
         function caminhoNaoAluno() {
             var sckHotmart = getSCK();            
-            //window.location.href = `https://pay.hotmart.com/I11728780W?off=aw60ekjd&checkoutMode=10&sck=${sckHotmart}`; // Trocar link. Redireciona para o checkout Hotmart.
-            alert("Redirecionando para o checkout Hotmart...");
+            window.location.href = `https://pay.hotmart.com/I11728780W?off=8r4p17o9&checkoutMode=6&sck=${sckHotmart}`; // Trocar link. Redireciona para o checkout Hotmart.
         }
 
         //Função para mudar a estética do form enquanto faz consulta de API
@@ -380,18 +379,14 @@
                             aestheticOff();
                             console.log("Executei sucesso.");
                         } else if (offer_code && offer_code === "INAPTO1") {
-                            //window.location.href = `https://onovomercado.com/aviso-alunos1/`; // Ajustar com página de aviso para os inaptos do grupo 1.
-                            alert(
-                                "É INAPTO e foi redirecionado para a página de inapto 2."
-                            );
+                            window.location.href = `/aviso-1.html`; // Ajustar com página de aviso para os inaptos do grupo 1.
+                            
                             aestheticOff();
                             console.log("Executei com sucesso. É inapto e foi redirecionado para a página de inapto 1.");
                         }
                         else if (offer_code && offer_code === "INAPTO2") {
-                            //window.location.href = `https://onovomercado.com/aviso-alunos2/`; // Ajustar com página de aviso para os inaptos do grupo 2.
-                            alert(
-                                "É INAPTO e foi redirecionado para a página de inapto 2."
-                            );
+                            window.location.href = `/aviso-2.html`; // Ajustar com página de aviso para os inaptos do grupo 2.
+                            
                             aestheticOff();
                             console.log("Executei com sucesso. É inapto e foi redirecionado para a página de inapto 2.");
                         }
